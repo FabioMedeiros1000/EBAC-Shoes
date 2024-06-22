@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.container{
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container h2{
+    width: 100%;
+    border-bottom: 2px solid rgb(56, 56, 205);
+}
+
+header{
+    padding: 16px;
+    background-color: rgb(56, 56, 205);
+}
+
+header h1{
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+}
+
+header ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 12px;
+}
+
+section{
+    background-color: rgba(56, 56, 205, 0.1);
+}
+
+section h2,h3{
+    color: rgb(56, 56, 205);
+}
+
+section p{
+    color: rgb(37, 37, 194);
+}
+
+#sobre-a-loja {
+    padding: 32px 0;
+}
+
+#sobre-a-loja h2{
+    padding-bottom: 16px;
+}
+
+#sobre-a-loja .sobre-a-loja-texto{
+    padding-top: 16px;
+}
+
+#sobre-a-loja .container{
+    align-items: flex-start;
+}
+
+#sobre-a-loja .container img{
+    margin-right: 30px;
+}
+
+#sobre-a-loja .container img{
+    height: 300px;
+}
+
+#sobre-a-loja .container .produtos{
+    position: absolute;
+    top:100%;
+}
+
+#produtos{
+    padding-bottom: 25px;
+}
+
+.produtos-da-loja{
+    flex-direction: column;
+}
+
+.produtos-da-loja h2{
+    padding-bottom: 16px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    justify-content: space-between;
+
+}
+
+.produto{
+    width: 100%;
+}
+
+.produto img{
+    max-width: 100%;
+    padding-top: 26px;
+    padding-bottom: 8px;
+}
+
+.produto p{
+    margin: 8px 0;
+}
+
+.produto button{
+    padding: 8px 0;
+    width: 100%;
+    background-color: rgb(56, 56, 205);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.produto button:hover{
+    background-color: rgba(56, 56, 205,0.9);
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        max-width: 640px;
+        width: 80%;
+    }
+
+    #sobre-a-loja h2{
+        padding-top: 16px;
+    }
+
+    #sobre-a-loja .container{
+        display: block;
+    }
+    
+    #sobre-a-loja .container img{
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    #sobre-a-loja .container .produtos{
+        position: absolute;
+        top:100%;
+    }
+    
+    .produtos{
+        display: block;
+    
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 1023px;
+        width: 90%;
+    }
+
+    #sobre-a-loja h2{
+        padding-top: 16px;
+    }
+    
+    #sobre-a-loja .container{
+        display: block;
+    }
+    
+    #sobre-a-loja .container img{
+        margin-right: 0;
+        width:100%;
+        height: auto;
+    }
+
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+
